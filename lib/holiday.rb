@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
       capitalized_day = []
       if day.to_s.split("_").size > 1
         day.to_s.split("_").collect do |split_day|
-          capitalized_day << split_day
+          capitalized_day << split_day.capitalize
         end
       else
         capitalized_day << day.capitalize
