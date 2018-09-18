@@ -64,15 +64,15 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
     puts "#{season.capitalize}:"
     holiday.each do |day, supplies|
-      capitalize_day = []
+      capitalized_day = []
       if day.to_s.split("_").size > 1
         day.to_s.split("_").collect do |split_day|
-          capitalize_day << split_day
+          capitalized_day << split_day
         end
       else
-        capitalize_day << day.capitalize
+        capitalized_day << day.capitalize
       end
-      puts "  #{capitalize_day.join(" ")}: #{supplies.join(", ")}"
+      puts "  #{capitalized_day.join(" ")}: #{supplies.join(", ")}"
     end
   end
 end
