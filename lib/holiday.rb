@@ -72,7 +72,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts "  #{new_holiday}: #{supplies.join(", ")}"
     end
   end
-  holiday_hash[:season][:holiday_name] = new_holiday
 end
 
 def all_holidays_with_bbq(holiday_hash)
